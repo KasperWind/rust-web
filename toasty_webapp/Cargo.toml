@@ -1,0 +1,13 @@
+[package]
+name = "toasty_webapp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.145"
+tokio = { version = "1", features = ["full"] }
+toasty = {path = "./crates/toasty/crates/toasty", features = ["sqlite"]}
+toasty-driver-sqlite = {path = "./crates/toasty/crates/toasty-driver-sqlite"}
+toasty-sql = {path = "./crates/toasty/crates/toasty-sql"}
